@@ -69,7 +69,7 @@ app = FastAPI(
 # Configuração de CORS para permitir acesso do frontend
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Para desenvolvimento. Em produção, especifique a origem exata
+    allow_origins=["*"],  # Permite acesso de qualquer origem
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
